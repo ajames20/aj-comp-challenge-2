@@ -59,9 +59,21 @@ a {
   width: 20rem;
 }
 
+.header--user--sm-screen {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .header--user {
     display: none;
+  }
+  .header--user--sm-screen {
+    color: var(--secondary-ligth-grey);
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
   }
 }
 
@@ -103,7 +115,8 @@ a {
     justify-content: space-between;
   }
   .header__nav-links {
-    font-size: 1.5rem;
+    flex-direction: column;
+    font-size: 2rem;
     order: 1;
   }
 }
@@ -130,7 +143,7 @@ a {
   .header__nav-links--link .fa-user,
   .header__nav-links--link .fa-list-ul,
   .header__nav-links--link .fa-share-alt {
-    margin-right: 0.3rem;
+    margin-right: 1rem;
   }
 }
 
@@ -149,16 +162,25 @@ a {
 .header__logo {
   display: flex;
   justify-content: space-around;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 2rem;
   position: relative;
-  width: 30rem;
+  border: 1px solid orange;
+  width: 35rem;
+}
+
+.header__logo--heading {
+  font-weight: 300;
+}
+
+.header__logo--image {
+  font-size: 5rem;
 }
 
 .header__logo .header__logo--image {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 0;
   transform: translate(-50%, -50%);
 }
 
