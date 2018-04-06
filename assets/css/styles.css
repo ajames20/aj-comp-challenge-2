@@ -292,7 +292,7 @@ a {
 }
 
 .card-section-header {
-  background-image: linear-gradient(to right, var(--primary-dark), transparent, var(--primary-dark)), url("https://images.designtrends.com/wp-content/uploads/2015/11/30161410/Simple-Plain-Blue-Background11.jpg");
+  background-image: url("https://images.designtrends.com/wp-content/uploads/2015/11/30161410/Simple-Plain-Blue-Background11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--primary-white);
