@@ -351,16 +351,13 @@ a {
 }
 
 .card-section-info__link {
+  background: var(--primary-background);
   cursor: pointer;
   font-size: 1.4rem;
   margin-top: 2rem;
   overflow-wrap: break-word;
   padding: 2rem 1rem 2rem;
   transition: all .2s ease;
-}
-
-.card-section-info__link:hover {
-  background: var(--primary-background);
 }
 
 .card-section-playlist {
