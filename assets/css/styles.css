@@ -41,7 +41,7 @@ a {
 /* HEADER STYLES */
 
 .header {
-  background-color: var(--primary-dark);
+  background: linear-gradient(to bottom, #232526, #414345);
   color: var(--primary-light-grey);
   display: flex;
   position: relative;
@@ -139,6 +139,7 @@ a {
 .header__nav-links--link {
   margin-bottom: 1rem;
   color: var(--primary-light-grey);
+  color: var(--primary-blue);
 }
 
 .header__nav-links--link:hover {
@@ -250,11 +251,17 @@ a {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 700px) {
+  .card-section {
+    justify-content: space-between;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
   .card-section {
     justify-content: center;
   }
-}
+} */
 
 /* CARD SECTION CARD */
 
@@ -269,9 +276,9 @@ a {
   transition: all .3s ease;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
   .card-section__card {
-    width: 48%;
+    width: 49%;
   }
 }
 
@@ -292,7 +299,7 @@ a {
 }
 
 .card-section-header {
-  background-image: url("https://images.designtrends.com/wp-content/uploads/2015/11/30161410/Simple-Plain-Blue-Background11.jpg");
+  background-image: linear-gradient(to bottom, #232526, transparent, #414345), url("https://images.designtrends.com/wp-content/uploads/2015/11/30161410/Simple-Plain-Blue-Background11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--primary-white);
