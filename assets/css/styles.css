@@ -34,8 +34,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 /* HEADER STYLES */
@@ -44,8 +44,8 @@ a {
   background: linear-gradient(to bottom, #232526, #414345);
   color: var(--primary-light-grey);
   display: flex;
-  position: relative;
   padding: 3rem 2rem;
+  position: relative;
 }
 
 @media screen and (max-width: 900px) {
@@ -57,9 +57,9 @@ a {
 .header--user {
   color: var(--primary-blue);
   font-size: 1.4rem;
-  position: absolute;
   display: flex;
   justify-content: space-around;
+  position: absolute;
   right: 1rem;
   top: 1rem;
   width: 20rem;
@@ -86,38 +86,38 @@ a {
 .header--user .fa-user-circle {
   color: var(--secondary-ligth-grey);
   font-size: 2.3rem;
-  position: absolute;
   left: 0;
-  transform: translate(-50%, -50%);
+  position: absolute;
   top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header--user .fa-caret-down {
-  position: absolute;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
   top: 50%;
   right: 40px;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
+  position: absolute;
 }
 
 .header__nav {
   align-items: flex-end;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .header__nav-links {
   display: flex;
-  justify-content: space-around;
   font-size: 2rem;
+  justify-content: space-around;
   list-style-type: none;
 }
 
 @media screen and (max-width: 900px) {
   .header__nav {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
   }
   .header__nav-links {
@@ -137,9 +137,8 @@ a {
 }
 
 .header__nav-links--link {
-  margin-bottom: 1rem;
-  color: var(--primary-light-grey);
   color: var(--primary-blue);
+  margin-bottom: 1rem;
 }
 
 .header__nav-links--link:hover {
@@ -175,8 +174,8 @@ a {
 .header__logo {
   color: var(--light-font);
   display: flex;
-  justify-content: space-around;
   font-size: 4rem;
+  justify-content: space-around;
   margin-top: 2rem;
   position: relative;
   width: 35rem;
@@ -202,9 +201,9 @@ a {
 
 .header__logo .header__logo--image {
   position: absolute;
-  top: 50%;
   left: 28rem;
   transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 @media screen and (max-width: 900px) {
@@ -212,9 +211,9 @@ a {
     width: 100%;
   }
   .header__logo .header__logo--image {
-    top: -1rem;
     left: 50%;
     margin-bottom: 1rem;
+    top: -1rem;
   }
 }
 
@@ -247,8 +246,8 @@ a {
 
 .card-section {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 700px) {
@@ -257,23 +256,17 @@ a {
   }
 }
 
-/* @media screen and (max-width: 900px) {
-  .card-section {
-    justify-content: center;
-  }
-} */
-
 /* CARD SECTION CARD */
 
 .card-section__card {
-  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
   background-color: #fff;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
   display: flex;
   flex-direction: column;
   height: 48rem;
-  width: 100%;
   margin-bottom: 2rem;
   transition: all .3s ease;
+  width: 100%;
 }
 
 @media screen and (min-width: 750px) {
@@ -358,12 +351,12 @@ a {
 }
 
 .card-section-info__link {
+  cursor: pointer;
   font-size: 1.4rem;
   margin-top: 2rem;
+  overflow-wrap: break-word;
   padding: 2rem 1rem 2rem;
   transition: all .2s ease;
-  cursor: pointer;
-  overflow-wrap: break-word;
 }
 
 .card-section-info__link:hover {
